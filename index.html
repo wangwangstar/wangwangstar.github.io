@@ -268,8 +268,8 @@
             
               
                 
-                <a class="post-title-link" href="/2016/06/10/2016-06-10-js-base1/" itemprop="url">
-                  未命名
+                <a class="post-title-link" href="/2015/12/24/2015-12-24-git-study-branch/" itemprop="url">
+                  Git分支学习
                 </a>
               
             
@@ -282,19 +282,38 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-06-10T13:07:08+08:00" content="2016-06-10">
-              2016-06-10
+            <time itemprop="dateCreated" datetime="2015-12-24T23:00:00+08:00" content="2015-12-24">
+              2015-12-24
             </time>
           </span>
 
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/Git/" itemprop="url" rel="index">
+                    <span itemprop="name">Git</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
           
 
           
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/06/10/2016-06-10-js-base1/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/06/10/2016-06-10-js-base1/" itemprop="commentsCount"></span>
+                <a href="/2015/12/24/2015-12-24-git-study-branch/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/12/24/2015-12-24-git-study-branch/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -318,46 +337,141 @@
 
       
         
-          
-            <h1 id="js简介"><a href="#js简介" class="headerlink" title="js简介"></a>js简介</h1><ol>
-<li>js的起源</li>
-</ol>
-<p>&emsp;&emsp;JavaScript是Netscape公司与Sun公司合作开发的。在JavaScript出现之前，Web浏览不过是一种能够显示超文本文档的简单的软件。<br><br>&emsp;&emsp;而在JavaScript出现之后，网页的内容不再局限于枯燥的文本，它们的可交互性得到了显著地改善。<br>在1995年，JavaScript1.0发布时Netscape<br>Navigation主宰着浏览器市场，微软的IE浏览器则扮演着追赶者的角色。面对微软的强有力的竞争，Netscape和Sun公司联合（欧洲计算机制造商协会）<br>对JavaScript语言进行了标准化，于是出现了ECMAScript语言，这是JavaScript语言的另一个名字。<br>到了1996年，JavaScript、ECMAScript、JScript——随便怎么称呼它——已经站稳了脚跟。Netscape和微软公司在各自的第3版浏览器中都不同程度<br>地支持JavaScript1.1语言。</p>
-<p>注意：JavaScript与公司开发的Java程序语言没有任何联系。事实上，Java在理论上几乎可以部署在任何环境，但JavaScript却倾向于只应用在<br>Web浏览器。</p>
-<p><br>&emsp;&emsp;JavaScript是一种脚本语言，通常只能通过Web浏览器去完成一些操作而不能像普通意义上的程序那样独立运行，因为它需要Web浏览器进行解释和<br>执行。不过，这种相对的简单性也正是JavaScript比较容易学习和掌握的长处。另外，JavaScript还向程序员提供了一些操控Web浏览器的手段。<br>例如，JavaScript语言可以用来调整Web浏览器窗口的高度、宽度和位置等属性。</p>
-<ol>
-<li>DOM</li>
-</ol>
-<p>&emsp;&emsp;描述对象用DOM脚本代码抽象的形容出来，并达到让对方能理解你所描<br>述的具体是什么。DOM是一种API（应用编程接口）。简单地说，API就是一组已经得到有关各方共同认可的基本约定。<br>W3C对DOM的定义是：“一个与系统平台和编程语言无关的接口，程序和脚本可以通过这个接口动态的访问和修改文档的内容、结构和样式。”</p>
-<ol>
-<li><p>JS基础语法</p>
-<ul>
-<li><p>JavaScript 语句<br>  <br>JavaScript 语句向浏览器发出的命令。语句的作用是告诉浏览器该做什么。</p>
-<p>  通常我们在每条可执行的语句结尾添加分号，分号用于分隔 JavaScript 语句，使用分号的另一用处是在一行中编写多条语句。</p>
-<p>  浏览器会按照JavaScript 代码（或者只有 JavaScript）即 JavaScript 语句的编写顺序来执行每条语句。<br>  例如：<br>  var xpos = parseInt(elem.style.left);</p>
-<pre><code>var ypos = parseInt(elem.style.top);
-</code></pre></li>
-<li><p>注释<br>  <br>JavaScript 不会执行注释。我们可以添加注释来对 JavaScript 进行解释，或者提高代码的可读性。<br>  单行注释以 // 开头;<br>  例如：<br>  // 输出标题：<br>  document.getElementById(“myH1”).innerHTML=”Welcome to my Homepage”;<br>  // 输出段落：<br>  document.getElementById(“myP”).innerHTML=”This is my first paragraph.”;<br>  多行注释以 /<em> 开始，以 </em>/ 结尾。<br>  比如：<br>  /<em><br>  下面的这些代码会输出<br>  一个标题和一个段落<br>  并将代表主页的开始
-  </em>/<br>  document.getElementById(“myH1”).innerHTML=”Welcome to my Homepage”;<br>  document.getElementById(“myP”).innerHTML=”This is my first paragraph.”;</p>
-<p>3.3变量<br>  <br>&emsp;&emsp;与代数一样，JavaScript 变量可用于存放值（比如 x=2）和表达式（比如 z=x+y）。<br>  变量可以使用短名称（比如 x 和 y），也可以使用描述性更好的名称（比如 age, sum, totalvolume）。<br>  变量必须以字母开头<br>  变量名称对大小写敏感（y 和 Y 是不同的变量）<br>  提示：JavaScript 语句和 JavaScript 变量都对大小写敏感。<br>  声明（创建） JavaScript 变量：在 JavaScript 中创建变量通常称为“声明”变量。<br>  例如：我们使用 var 关键词来声明变量并赋值：<br>  var carname=”Volvo”;</p>
-<p>3.4数据类型<br>  <br>JavaScript 字符串<br>  字符串是存储字符（比如 “Bill Gates”）的变量，字符串可以是引号中的任意文本，您可以使用单引号或双引号；<br>  实例<br>  var carname=”Bill Gates”;</p>
-<pre><code>JavaScript 数字
-</code></pre><p>  JavaScript 只有一种数字类型，数字可以带小数点，也可以不带；</p>
-<pre><code>JavaScript 布尔
-</code></pre><p>  布尔（逻辑）只能有两个值：true 或 false。<br>  例如：<br>  var x=true<br>  var y=false</p>
-<pre><code>JavaScript 数组
-</code></pre><p>  下面的代码创建名为 cars 的数组：<br>  var cars=new Array();<br>  cars[0]=”Audi”;<br>  cars[1]=”BMW”;<br>  cars[2]=”Volvo”;<br>  或者<br>  var cars=new Array(“Audi”,”BMW”,”Volvo”);<br>  或者<br>  var cars=[“Audi”,”BMW”,”Volvo”];</p>
-<pre><code>JavaScript 对象
-</code></pre><p>  对象由花括号分隔。在括号内部，对象的属性以名称和值对的形式 (name : value) 来定义。属性由逗号分隔：<br>  var person={firstname:”Bill”, lastname:”Gates”, id:5566};</p>
-<pre><code>Undefined 和 Null
-</code></pre><p>  Undefined 这个值表示变量不含有值。<br>  可以通过将变量的值设置为 null 来清空变量。<br>  例如：<br>  cars=null;<br>  person=null;</p>
-<p>3.5对象<br>  <br>JavaScript 中的所有事物都是对象：字符串、数值、数组、函数…此外，JavaScript 允许自定义对象。<br>  JavaScript 提供多个内建对象，比如 String、Date、Array 等等，对象只是带有属性和方法的特殊数据类型。<br>  访问对象的属性：<br>  属性是与对象相关的值。访问对象属性的语法是：objectName.propertyName<br>  下面的例子使用了 String 对象的 length 属性来获得字符串的长度：<br>  var message=”Hello World!”;<br>  var x=message.length;<br>  访问对象的方法：<br>  方法是能够在对象上执行的动作，您可以通过以下语法来调用方法：<br>  objectName.methodName()<br>  这个例子使用了 String 对象的 toUpperCase() 方法来将文本转换为大写：<br>  var message=”Hello world!”;<br>  var x=message.toUpperCase();<br>  创建 JavaScript 对象：<br>  通过 JavaScript，您能够定义并创建自己的对象。创建新对象有两种不同的方法：<br>  定义并创建对象的实例；<br>  使用函数来定义对象，然后创建新的对象实例。</p>
-</li>
-</ul>
-</li>
-</ol>
+          <blockquote>
+<p>学习记录，给自己看</p>
+</blockquote>
+<h2 id="Git-分支-分支的新建"><a href="#Git-分支-分支的新建" class="headerlink" title="Git 分支 - 分支的新建"></a>Git 分支 - 分支的新建</h2><p>&emsp;&emsp;新建一个分支并同时切换到那个分支上，你可以运行一个带有 -b 参数的 git checkout 命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout -b iss53</span><br><span class="line">Switched to a new branch <span class="string">"iss53"</span></span><br></pre></td></tr></table></figure></p>
+<p>&emsp;&emsp;它是下面两条命令的简写：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git branch iss53</span><br><span class="line">$ git checkout iss53</span><br></pre></td></tr></table></figure></p>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2015/12/24/2015-12-24-git-study-branch/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2015/12/18/2015-12-18-git-study-base/" itemprop="url">
+                  Git 基础学习
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2015-12-18T23:00:00+08:00" content="2015-12-18">
+              2015-12-18
+            </time>
+          </span>
 
           
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/Git/" itemprop="url" rel="index">
+                    <span itemprop="name">Git</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2015/12/18/2015-12-18-git-study-base/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/12/18/2015-12-18-git-study-base/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <blockquote>
+<p>学习记录，给自己看</p>
+</blockquote>
+<h2 id="在现有目录初始化仓库"><a href="#在现有目录初始化仓库" class="headerlink" title="在现有目录初始化仓库"></a>在现有目录初始化仓库</h2><p>&emsp;&emsp;<code>git init</code><br></br>&emsp;&emsp;该命令将创建一个名为 .git 的子目录，这个子目录含有你初始化的 Git 仓库中所有的必须文件，这些文件是 Git 仓库的骨干。 但是，在这个时候，我们仅仅是做了一个初始化的操作，你的项目里的文件还没有被跟踪。</p>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2015/12/18/2015-12-18-git-study-base/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -387,6 +501,10 @@
   </section>
 
   
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+  </nav>
+
 
 
           </div>
@@ -425,13 +543,27 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">1</span>
+              <span class="site-state-item-count">3</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
 
           
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
 
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
           
 
         </nav>
