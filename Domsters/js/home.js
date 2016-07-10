@@ -77,12 +77,12 @@ function prepareSlideshow() {
     var slideshow = document.createElement("div");
     slideshow.setAttribute("id", "slideshow");
     var frame = document.createElement("img");
-    frame.setAttribute("src","../img/frame.gif");
+    frame.setAttribute("src","img/frame.gif");
     frame.setAttribute("alt","");
     frame.setAttribute("id","frame");
     slideshow.appendChild(frame);
     var preview = document.createElement("img");
-    preview.setAttribute("src", "../img/slideshow.gif");
+    preview.setAttribute("src", "img/slideshow.gif");
     preview.setAttribute("alt", "a glimpse of what awaits you");
     preview.setAttribute("id", "preview");
     slideshow.appendChild(preview);
