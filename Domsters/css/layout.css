@@ -1,0 +1,137 @@
+/*<section> 标签定义文档中的节（section、区段）。比如章节、页眉、页脚或文档中的其他部分*/
+section,header,article,nav{
+    /*block为块对象的默认值*/
+    display: block;
+}
+/*使用通配选择器把所有的元素的内外边距设置为零*/
+*{
+    /*内边距*/
+    padding: 0;
+    /*外边距*/
+    margin: 0;
+}
+body{
+    margin: 1em 10%;
+    background-image: url("../img/background.gif");
+    /*background-attachment定义背景图片随滚动轴的移动方式；fixed随着页面的滚动轴背景图片不会移动*/
+    background-attachment: fixed;
+    /*background-position: 定义背景图片的位置； top left为左上方*/
+    background-position: top left;
+    /*background-repeat定义背景图片的重复方式； repeat-x在x轴上平铺,左右*/
+    background-repeat: repeat-x;
+    /*max-width定义元素的最大宽度*/
+    max-width: 80em;
+}
+header{
+    color: #ec8;
+    background-color: #334;
+    border-color: #667;
+    background-image: url("../img/guitarist.gif");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    border-width: .1em;
+    /* border-style属性用于设置元素边框的样式;solid设置为实线*/
+    border-style: solid;
+    /*下边框宽度*/
+    border-bottom-width: 0;
+}
+header nav{
+    background-image: url("../img/navbar.gif");
+    background-repeat: repeat-x;
+    background-position: bottom left;
+    border-width: .1em;
+    /* border-style属性用于设置元素边框的样式;solid设置为实线*/
+    border-style: solid;
+    /*下边框宽度*/
+    border-bottom-width: 0;
+    border-top-width: 0;
+    padding-left: 10%;
+}
+article{
+    border-width: .1em;
+    border-style: solid;
+    border-top-width: 0;
+    padding: 2em 10%;
+    /*line-height 属性设置行间的距离（行高）*/
+    line-height: 1.8em;
+}
+header nav ul{
+    width: 100%;
+    overflow: hidden;
+    border-left-width: .1em;
+    border-left-style: solid;
+}
+article img{
+    border-width: .1em;
+    border-style: solid;
+    /*outline-width 属性设置元素整个轮廓的宽度*/
+    outline-width: .1em;
+    /*outline-style 属性用于设置元素的整个轮廓的样式*/
+    outline-style: solid;
+}
+header nav li{
+    /*inline为默认。此元素会被显示为内联元素，元素前后没有换行符*/
+    display: inline;
+}
+header nav li a{
+    display: block;
+    /*对象靠左浮动*/
+    float: left;
+    padding: .5em 2em;
+    border-right: .1em solid;
+}
+/*利用这些id为不同的页面的头部应用不同的背景图像*/
+    #about header{
+        background-image: url("../img/lineup.gif");
+    }
+    #photos header{
+        background-image: url("../img/basshead.gif");
+}
+    #live header{
+        background-image: url("../img/bassist.gif");
+}
+    #contact header{
+        background-image: url("../img/drummer.gif");
+}
+    #slideshow{
+        width: 150px;
+        height: 150px;
+        position: relative;
+        overflow: hidden;
+    }
+    #preview{
+        position: absolute;
+        border-width: 0;
+        outline-width: 0;
+    }
+    #imagegallery li{
+        display: inline;
+    }
+    /*为单元格应用一些样式*/
+    td{
+        padding: .5em 3em;
+    }
+    /*为表头和表格选定指定颜色*/
+    th{
+        color: #edc;
+        background-color: #455;
+    }
+    tr td{
+        color: #223;
+        background-color: #eb6;
+    }
+    dl{
+        overflow: hidden;
+    }
+    dt{
+        float: left;
+    }
+    dd{
+        float: left;
+    }
+    label{
+        display: block;
+    }
+    fieldset{
+        border: 0;
+    }
