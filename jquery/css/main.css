@@ -1,0 +1,19 @@
+#header .conWidth {
+    position: relative;
+    height: 105px;
+    margin: 0 auto;
+    width: 990px;
+    z-index: 100;
+}
+
+#header .logo {
+    float:left;
+    margin:0 0 0 10px;
+    color:#FFF;
+    line-height:80px;
+}
+#header .search {
+    left: 198px;
+    position: absolute;
+    top: 20px;
+}
